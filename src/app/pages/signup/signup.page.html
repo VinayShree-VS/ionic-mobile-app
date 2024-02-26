@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true">
+  <div class="topCon">
+    <div class="leftTopTitle"></div>
+    <div class="titles">
+      <p routerLink="/login"><ion-icon slot="start" name="arrow-back-outline"></ion-icon> Back</p>
+      <h1>Sing Up</h1>
+    </div>
+  </div>
+  <div class="bottomCon">
+    <!-- <div class="b-ch br-ch ch-1"></div>
+    <div class="b-ch br-ch ch-2"></div> -->
+    <div class="b-ch br-ch ch-3"></div>
+    <div class="loginCon">
+      <form [formGroup]="loginForm">
+      <div class="email-mobile-field">
+          <ion-input type="text" formControlName="full_name" placeholder="Enter Full Name"></ion-input>
+      </div>
+      <div class="email-mobile-field">
+          <ion-input type="text" formControlName="email_mobile" placeholder="Enter Email/Mobile number"></ion-input>
+      </div>
+      <div class="password-field">
+          <ion-input type="Password" formControlName="password" placeholder="Password"></ion-input>
+      </div>
+      <div class="password-field">
+          <ion-input type="Password" formControlName="congirm_password" placeholder="Confirm Password"></ion-input>
+      </div>
+      <div class="loginBtn">
+        <ion-button fill="clear" shape="round">Sing Up</ion-button>
+        <ion-text>
+          <p>you alrady have account? <span routerLink="/login"> Login here.</span></p>
+        </ion-text>
+      </div>
+      </form>
+    </div>
+  </div>
+</ion-content>

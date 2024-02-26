@@ -1,0 +1,30 @@
+<ion-content [fullscreen]="true">
+    <div class="topCon">
+      <div class="leftTopTitle"></div>
+      <div class="titles">
+        <p routerLink="/home"><ion-icon slot="start" name="arrow-back-outline"></ion-icon> Back</p>
+        <h1>Log In</h1>
+      </div>
+    </div>
+    <div class="bottomCon">
+      <div class="b-ch br-ch ch-1"></div>
+      <div class="b-ch br-ch ch-2"></div>
+      <div class="b-ch br-ch ch-3"></div>
+      <div class="loginCon">
+        <form [formGroup]="loginForm">
+        <div class="email-mobile-field">
+            <ion-input type="text" formControlName="email_mobile" placeholder="Enter Email/Mobile number"></ion-input>
+        </div>
+        <div class="password-field">
+            <ion-input type="Password" formControlName="password" placeholder="Password"></ion-input>
+        </div>
+        <div class="loginBtn">
+          <ion-button fill="clear" shape="round">Login</ion-button>
+          <ion-text>
+            <p>If you don't have account? <span routerLink="/signup"> Register here.</span></p>
+          </ion-text>
+        </div>
+        </form>
+      </div>
+    </div>
+</ion-content>

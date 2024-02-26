@@ -1,0 +1,7 @@
+{
+  "name": "guard-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
